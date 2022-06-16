@@ -1,0 +1,75 @@
+body {
+  background-image: url(../assets/img/giphy.webp);
+  color: white;
+  font-family: 'Open Sans';
+}
+.main__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  max-width: 500px;
+  background-color: #291528;
+  flex-direction: column;
+  text-align: center;
+  padding: 8px;
+  margin: 50px;
+  border-radius: 12px;
+}
+
+input {
+  height: 24px;
+  padding: 0.2em;
+}
+
+label {
+  margin-bottom: 0.2em;
+  padding: 5px;
+  margin: 2px;
+  display: block;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 18px;
+  border: 1px solid #ba96ca;
+  margin: 8px;
+  border-radius: 6px;
+}
+
+.hide__div {
+  display: none;
+}
+
+.message {
+  border: 1px solid white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 140px;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ba96ca;
+}
+
+button:hover {
+  background-color: #9E829C;
+}

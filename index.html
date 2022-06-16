@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Codificador</title>
+</head>
+<body>
+  <main class="main__content">
+    <form class="container" name="form">
+      <h1>Codificador</h1>
+      <label for="type">Digite sua mensagem:
+        <input type="text" id="text">
+        <label> Tipo de codificação:
+          <select id="choices">
+            <option value="null" id="null" disabled selected>Selecione opção</option>
+            <option id="cipherC" value="cipherC">Cifra de César</option>
+            <option id="base" value="base">Base64</option>
+          </select>
+        </label>
+        <div class="hide__div" id="hide">
+          <input type="number" id="number" default="0" min="1" value="1">
+        </div>
+        <input type="radio" name="codeOrDecode" id="code" value="code">Codificar
+        <input type="radio" name="codeOrDecode" id="decode" value="decode">Decodificar
+        <p class="message" id="message"></p>
+        <div class="button">
+          <button id="button" type="submit">Confirmar</button>
+        </div>
+    </form>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
